@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Rubik', sans-serif;
+    transition: 0.2s ease all;
+}
+
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    transition: 0.2s ease all;
+}
+
+.navbar, .navbar-expand-lg, .navbar-light, .bg-light{
+    background-color: #6a9eda;
+}
+
+body{
+    background:linear-gradient(#88a7d0af,#CAECF1);
+    transition: 0.2s ease all;
+}
+
+
+.dropdown-menu a:hover{
+    background-color: #5086c1;
+}
+
+#opcionesMenus{
+    background-color: #5086c1!important;
+}
+
+#opcionesMenus a{
+    color: white;
+}
+
+#opcionesMenus a:hover{
+    color: #5086c1;
+}
+
+body.dark #opcionesMenus{
+    background: #34587e!important;
+}
+
+body.dark #cabeceraPrincipal{
+    background: #3c6ea3!important;
+}
+
+.navbar-nav li:hover{
+    transition: 0.4s;
+    background: #dfe0e0;
+    border-radius: 5px;
+}
+
+.nav-link:hover{
+    color: #5086c1;
+}
+
+.navbar-nav.justify-content-center.nav-pills.nav-fill li a.active {
+    background-color: #1d3f5e;
+}
+
+.navbar-nav.justify-content-center.nav-pills.nav-fill li a.disabled {
+    background-color: #41566d;
+}
+
+#imagenPerfil{
+    vertical-align: middle;
+}
+
+.form-control.mr-sm-2{
+    width: 500px;
+}
+
+.navbar-nav li a{
+    font-size: 20px;
+    padding: 13px 60px!important;
+    vertical-align: middle!important;
+}
+
+.darkModeSwitch{
+    background: #000;
+    display:flex;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.darkModeSwitch span{
+    width:30px;
+    height: 27px;
+    line-height:30px;
+    display:block;
+    color:#fff;
+    background: none;
+}
+
+.darkModeSwitch::after{
+    
+    display:block;
+    background: #fffbf5;
+    width: 30px;
+    height:30px;
+    position: absolute;
+    top:0;
+    left:0;
+    right:unset;
+    border-radius: 3rem;
+    transition: all .5s ease;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
+    content: "";
+}
+
+.darkModeSwitch.active{
+    
+    background: orange;
+  }
+.darkModeSwitch.active::after{
+    left:unset;
+    right:0;
+}
+
+/*darkmode*/
+
+body.dark {
+    background:linear-gradient(#081324,#040912);
+    transition: 0.5s ease all;
+}
+
+body.dark .footer{
+    background: #34587e;
+}
+
+.form-inline input{
+    width: 500px!important;
+}
+
+/*estilos para barra de busqueda*/
+
+.btn{
+    box-shadow: 8px 8px 10px  rgba(0, 0, 0,0.15);
+    background-color: white;
+    color: #1f272b;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.btn img{
+    width: 30px;
+}
+
+/*estilos para footer*/
+.footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer{
+    padding: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #5086c1;
+    display: flex;
+    line-height : 22px;
+    color: white;
+}
+
+.footer h4{
+    border-bottom: 1px solid silver;
+}
+
+.footer #menu{
+    padding-right: 40px;
+    flex: 25%;
+}
+
+.footer #cliente{
+    padding-right: 40px;
+    flex: 25%;
+
+}
+
+.footer #nosotros{
+    padding-right: 40px;
+    flex: 25%;
+
+}
+
+.footer #redes{
+    padding-right: 40px;
+    flex: 25%;
+
+}
+
+#redes img{
+    width: 35px;
+}
+
+/*responsive*/
+@media only screen and (max-width: 1326px){
+    header .lbl{
+        margin-top: 14px;
+        display: flex;
+        flex-direction:column-reverse;
+    }
+
+    #txt-usuario {
+        display: none;
+    }
+
+    .menuNav{
+        z-index: 1;
+        border: #000;
+        margin-top: 120px;
+        position: absolute;
+        width: 50%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+
+    .menuNav ul{
+        flex-direction: column;
+    }
+
+    .menuNav li{
+        border: 1px solid #ffffff ;
+    }
+
+    .menuNav li a{
+        padding: 13px 40px;
+    }
+
+    #btn-menu:checked ~ .menuNav{
+        margin: 0;
+        margin-top: 120px;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 768px){
+
+/*estilo responsive para footer*/
+
+    .dropdown-item{
+        font-size: 17px!important;
+        width: auto!important;
+    }
+
+    .nav-item.dropdown{
+        width: auto!important;
+    }
+
+    .navbar-nav.flex-row.mr-lg-0{
+        width: auto!important;
+    }
+
+    .footer{
+        
+        display: block;
+        padding: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #5086c1;
+        line-height: 22px;
+        color: white;
+    }
+
+    .footer #menu{
+        padding-top: 20px;
+        padding-right: 40px;
+    }
+    
+    .footer #cliente{
+        padding-top: 20px;
+        padding-right: 40px;
+    
+    }
+    
+    .footer #nosotros{
+        padding-top: 20px;
+        padding-right: 40px;
+    
+    }
+    
+    .footer #redes{
+        padding-top: 20px;
+        padding-right: 40px;
+    
+    }
+}
